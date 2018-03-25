@@ -1,0 +1,6 @@
+#Operaação XOR
+
+  movi r1,9   #1001
+  movi r2,11  #1011
+
+  xor r3, r1, r2  #resultado 0010
