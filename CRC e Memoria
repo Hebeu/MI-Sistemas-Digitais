@@ -1,0 +1,65 @@
+.data
+#Valores armazenados na memoria
+Test:	.word 0b11010011101100	
+Des: 	.word 0b00000000000000000000000000000001	#Numero de bits a ser deslocado
+CRC: 	.word 0b1011					#CRC-32
+Const:	.word 0b10000000000000000000000000000000
+
+movia r1,Test	#Pega o endereço de Test	
+movia r2,Des	#Pega o endereço de Ola
+movia r3,Const
+
+ldw r1, 0(r1)	#Armazena o valor que corresponde a Test
+ldw r2, 0(r2)
+ldw r3, 0(r3)
+
+movi r4,14	#Numero de vezes que o loop vai funcionar
+movi r9,28
+movia r7,CRC	
+ldw r7, 0(r7)
+
+	.text
+
+			#AJUSTA
+#Desloca o polinomio do CRC para o bit mais significativo do dado de entrada
+
+AJUSTA:	sll r7,r7,r2
+	addi r5,r5,1
+	bne r5,r9,AJUSTA
+	movi r5,0
+	
+movi r10,18
+			
+			#AJUSTA2
+#Desloca o dado para tornar o seu ultimo bit o mais significativo
+
+AJUSTA2: sll r1,r1,r2
+	addi r5,r5,1
+	bne r5,r10,AJUSTA2
+	movi r5,0	
+			
+			#LOOP
+#Faz o calculo do CRC com o dado de entrada, deslocando, e fazendo xor
+			
+LOOP: 	xor r1, r1, r7	
+	sll r1,r1,r2	#Move 1 bit de r1 para a esquerda
+	addi r5,r5,1	#Valor incrementado até o tamanho do dado, que no caso é 14 bits
+	xor r11,r1,r3	
+	blt r11,r1,Roda # r11 é o resultado da xor de r3 com r1. Se ele for maior, 
+			# isso significa que o bit mais significativo do dado é zero
+			# e é preciso desloca-lo	
+	bne r5, r4, LOOP	
+
+
+			#Roda 
+
+#Desloca, incrementa contador , e analisa se o próximo bit é zero.
+#Se o próximo bit for zero, a função é chamada novamente recursivamente
+#Deslocando, incrementandi o contador e analisando se o próximo bit é
+#zero
+
+Roda: 	sll r1,r1,r2
+	addi r5,r5,1
+	xor r11,r1,r3
+	blt r11,r1,Roda
+	bne r5,r4,LOOP
