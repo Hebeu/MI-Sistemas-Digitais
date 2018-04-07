@@ -1,0 +1,91 @@
+.data
+RegAux: .word 0b11011000000000000000000000000000
+Const:	.word 0b10000000000000000000000000000000
+
+addi r1,r1,0b1101001
+movia r2,RegAux
+ldw r2,0(r2)
+movi r3,0b1011 #crc
+mov r4,r2
+movi r5,0b0001110
+movi r6,0b1000000 #bit que valida o deslocamento
+movi r7,0b0000001 #bit de deslocamento
+movi r8,3
+mov r11,r2 #r11-> registrador responssavel por receber r2 e ser deslocado para a direita até
+	   #o bot mais significativo ficar o mais a direita possivel
+movi r12,6 #contagem de deslocamento do r11
+movi r13,6 #auxiliar que grava o valor do contador r12
+movia r15,Const
+ldw r15,0(r15)
+
+.text
+
+AjustaCRC:
+	sll r3,r3,r7
+	addi r9,r9,1
+	bne r9,r8,AjustaCRC
+	mov r9,r0
+	
+ContaCRC:
+	xor r1,r1,r3
+	sll r1,r1,r7
+	call AtRegistrador
+
+ContaCRC2:
+	add r1,r1,r11
+	mov r11,r2	
+	addi r9,r9,1
+	xor r10,r1,r6
+	bgt r10,r1,Deslocar #r10<r1 desloca
+	beq r9,r5,Exit
+	bne r9,r5,ContaCRC
+	br Exit
+	
+Deslocar:
+	beq r9,r5,Exit
+	sll r1,r1,r7
+	call AtRegistrador2
+	
+Deslocar2:
+	add r1,r1,r11
+	addi r9,r9,1
+	xor r10,r1,r6
+	bgt r10,r1,Deslocar
+	beq r9,r5,Exit
+	bne r9,r5,ContaCRC
+
+#Label que verifica o ultimo bit do próximo registrador atravez da xor e chama as Label, BitSomaZero e BitSomaUm
+#Se o registrador 11 tiver o bit mais significativo com valor 1 ou zero, este valor vai ser adcionado quando a Label 
+#ContaCRC2 for chamada.	
+AtRegistrador:
+	xor r14,r11,r15 #r15 = 0b10000000000000000000000000000000
+	bgt r11,r14,BitSomaZero	#r11<r14
+	bgt r14,r11,BitSomaUm	#r14<r11
+
+BitSomaZero:
+	mov r11,r0
+	sll r2,r2,r7
+	call ContaCRC2
+
+BitSomaUm:
+	movi r11,0b0000001 #valor a ser adcionado no registrador principal (r1)
+	sll r2,r2,r7
+	call ContaCRC2
+
+AtRegistrador2:
+	xor r14,r11,r15 #r15 = 0b1000000
+	bgt r11,r14,BitSomaZero2
+	bgt r14,r11,BitSomaUm2
+
+BitSomaZero2:
+	mov r11,r0
+	sll r2,r2,r7
+	call Deslocar2
+
+BitSomaUm2:
+	movi r11,0b0000001
+	sll r2,r2,r7
+	call Deslocar2
+	
+	
+Exit:
