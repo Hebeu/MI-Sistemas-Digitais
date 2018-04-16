@@ -1,0 +1,126 @@
+.data
+RegAux: .word 0x68    72    69    73 ,0x6f    70    68    65 ,0x72    20    63    6f ,0x2d    65    73    63 ,0x72    65    76    65 ,0x75    20    76    e1 ,0x72    69    6f    73 ,0x20    64    65    20 ,0x73    65    75    73 ,0x20    66    69    6c ,0x6d    65    73    20 ,0x63    6f    6d    20 ,0x6f    20    69    72 ,0x6d    e3    6f    20 ,0x4a    6f    6e    61 ,0x74    68    61    6e ,0x20    4e    6f    6c ,0x61    6e    2c    20 ,0x65    20    61    64 ,0x6d    69    6e    69 ,0x73    74    72    61 ,0x20    61    20    70 ,0x72    6f    64    75 ,0x74    6f    72    61 ,0x20    53    79    6e ,0x63    6f    70    79 ,0x20    49    6e    63 ,0x2e    20    63    6f ,0x6d    20    61    20 ,0x65    73    70    6f ,0x73    61    20    65 ,0x20    70    61    72 ,0x63    65    69    72 ,0x61    20    64    65 ,0x20    74    72    61 ,0x62    61    6c    68 ,0x6f    2c    20    45 ,0x6d    6d    61    20 ,0x54    68    6f    6d ,0x61    73    2e    20 ,0x45    6e    74    72 ,0x65    20    6f    75 ,0x74    72    6f    73 ,0x20    6e    6f    74 ,0xe1    76    65    69 ,0x73    20    71    75 ,0x65    20    63    6f ,0x6c    61    62    6f ,0x72    61    72    61 ,0x6d    20    65    6d ,0x20    73    75    61 ,0x73    20    72    65 ,0x61    6c    69    7a ,0x61    e7    f5    65 ,0x73    2c    20    64 ,0x65    73    74    61 ,0x63    61    6d    2d ,0x73    65    20    6f ,0x20    64    69    72 ,0x65    74    6f    72 ,0x20    64    65    20 ,0x66    6f    74    6f ,0x67    72    61    66 ,0x69    61    20    57 ,0x61    6c    6c    79 ,0x20    50    66    69 ,0x73    74    65    72 ,0x2c    20    6f    73 ,0x20    72    6f    74 ,0x65    69    72    69 ,0x73    74    61    73 ,0x20    44    61    76 ,0x69    64    20    53 ,0x2e    20    47    6f ,0x79    65    72    20 ,0x65    20    4a    6f ,0x6e    61    74    68 ,0x61    6e    20    4e ,0x6f    6c    61    6e ,0x2c    20    6f    20 ,0x65    64    69    74 ,0x6f    72    20    4c ,0x65    65    20    53 ,0x6d    69    74    68 ,0x2c    20    6f    73 ,0x20    63    6f    6d ,0x70    6f    73    69 ,0x74    6f    72    65 ,0x73    20    44    61 ,0x76    69    64    20 ,0x4a    75    6c    79 ,0x61    6e    20    65 ,0x20    48    61    6e ,0x73    20    5a    69 ,0x6d    6d    65    72 ,0x2c    20    6f    20 ,0x64    65    73    69 ,0x67    6e    65    72 ,0x20    64    65    20 ,0x70    72    6f    64 ,0x75    e7    e3    6f ,0x20    4e    61    74 ,0x68    61    6e    20 ,0x43    72    6f    77 ,0x6c    65    79    2c ,0x20    6f    20    64 ,0x69    72    65    74 ,0x6f    72    20    64 ,0x65    20    65    6c ,0x65    6e    63    6f ,0x20    4a    6f    68 ,0x6e    20    50    61 ,0x70    73    69    64 ,0x65    72    61    2c ,0x20    6f    20    63 ,0x6f    6f    72    64 ,0x65    6e    61    64 ,0x6f    72    20    64 ,0x65    20    65    66 ,0x65    69    74    6f ,0x73    20    65    73 ,0x70    65    63    69 ,0x61    69    73    20 ,0x43    68    72    69 ,0x73    20    43    6f ,0x72    62    6f    75 ,0x6c    64    2c    20 ,0x65    20    6f    73 ,0x20    61    74    6f ,0x72    65    73    20 ,0x41    6e    6e    65 ,0x20    48    61    74 ,0x68    61    77    61 ,0x79    2c    20    43 ,0x68    72    69    73 ,0x74    69    61    6e ,0x20    42    61    6c ,0x65    2c    20    43 ,0x69    6c    6c    69 ,0x61    6e    20    4d ,0x75    72    70    68 ,0x79    2c    20    47 ,0x61    72    79    20 ,0x4f    6c    64    6d ,0x61    6e    2c    20 ,0x4a    6f    73    65 ,0x70    68    20    47 ,0x6f    72    64    6f ,0x6e    2d    4c    65 ,0x76    69    74    74 ,0x2c    20    4b    65 ,0x6e    20    57    61 ,0x74    61    6e    61 ,0x62    65    2c    20 ,0x4c    65    6f    6e ,0x61    72    64    6f ,0x20    44    69    43 ,0x61    70    72    69 ,0x6f    2c    20    4c ,0x69    61    6d    20 ,0x4e    65    65    73 ,0x6f    6e    2c    20 ,0x4d    61    72    69 ,0x6f    6e    20    43 ,0x6f    74    69    6c ,0x6c    61    72    64 ,0x2c    20    4d    69 ,0x63    68    61    65 ,0x6c    20    43    61 ,0x69    6e    65    2c ,0x20    4d    6f    72 ,0x67    61    6e    20 ,0x46    72    65    65 ,0x6d    61    6e    20 ,0x65    20    54    6f ,0x6d    20    48    61 ,0x72    64    79    2e ,0x20    41    73    20 ,0x6f    62    72    61 ,0x73    20    64    65 ,0x20    4e    6f    6c ,0x61    6e    20    63 ,0x6f    73    74    75 ,0x6d    61    6d    20 ,0x63    61    72    72 ,0x65    67    61    72 ,0x20    66    6f    72 ,0x74    65    73    20 ,0x69    6e    66    6c ,0x75    ea    6e    63 ,0x69    61    73    20 ,0x66    69    6c    6f ,0x73    f3    66    69 ,0x63    61    73    2c ,0x20    73    6f    63 ,0x69    6f    6c    f3 ,0x67    69    63    61 ,0x73    20    65    20 ,0xe9    74    69    63 ,0x61    73    2c    20 ,0x61    20    70    61 ,0x72    74    69    72 ,0x20    64    65    20 ,0x63    6f    6e    63 ,0x65    69    74    6f ,0x73    20    71    75 ,0x65    20    65    78 ,0x70    6c    6f    72 ,0x61    6d    20    74 ,0x65    6d    61    73 ,0x20    63    6f    6d ,0x6f    20    61    20 ,0x6d    6f    72    61 ,0x6c    69    64    61 ,0x64    65    20    68 ,0x75    6d    61    6e ,0x61    2c    20    61 ,0x20    63    6f    6e ,0x73    74    72    75 ,0xe7    e3    6f    20 ,0x64    6f    20    74 ,0x65    6d    70    6f ,0x20    65    20    61 ,0x20    6e    61    74 ,0x75    72    65    7a ,0x61    20    6d    61 ,0x6c    65    e1    76 ,0x65    6c    20    64 ,0x61    20    6d    65 ,0x6d    f3    72    69 ,0x61    20    65    20 ,0x64    61    20    69 ,0x64    65    6e    74 ,0x69    64    61    64 ,0x65    20    70    65 ,0x73    73    6f    61 ,0x6c    2e    53    65 ,0x75    20    74    72 ,0x61    62    61    6c ,0x68    6f    20    e9 ,0x20    70    65    72 ,0x6d    65    61    64 ,0x6f    20    70    6f ,0x72    20    65    6c ,0x65    6d    65    6e ,0x74    6f    73    20 ,0x6d    65    74    61 ,0x66    69    63    74 ,0xed    63    69    6f ,0x73    2e 74
+Const:	.word 0b10000000000000000000000000000000
+CRC: 	.word 0x814141AB
+ValidaDeslocamento:	.word 0b10000000000000000000000000000000
+bitDeslocamento: 	.word 0b00000000000000000000000000000001
+
+movia r1,RegAux
+ldw r1,0(r1)
+movia r2,RegAux+4
+movia r8, RegAux+4
+ldw r2,0(r2)
+movia r3,CRC
+ldw r3,0(r3)
+
+movi r16,252
+mov r4,r2
+movi r5,32
+movia r6,ValidaDeslocamento  #bit que valida o deslocamento
+ldw r6,0(r6)
+movia r7,bitDeslocamento #bit de deslocamento
+ldw r7,0(r7)
+mov r11,r2 #r11-> registrador responssavel por receber r2 e ser deslocado para a direita até
+	   #o bit mais significativo ficar o mais a direita possivel
+movia r15,Const
+ldw r15,0(r15)
+
+.text
+
+Primeiro:
+	addi r9,r9,1
+	call AtRegistrador3
+	
+ContaCRC:
+	xor r1,r1,r3
+	sll r1,r1,r7
+	call AtRegistrador
+
+ContaCRC2:
+	add r1,r1,r11
+	mov r11,r2	
+	addi r9,r9,1
+	xor r10,r1,r6
+	bgt r1,r10,Deslocar #r10<r1 desloca
+	beq r9,r5,Exit
+	bne r9,r5,ContaCRC
+	br Exit
+	
+Deslocar:
+	beq r9,r5,Exit
+	sll r1,r1,r7
+	call AtRegistrador2
+	
+Deslocar2:
+	add r1,r1,r11
+	addi r9,r9,1
+	xor r10,r1,r6
+	bgt r1,r10,Deslocar
+	beq r9,r5,Exit
+	bne r9,r5,ContaCRC
+
+#Label que verifica o ultimo bit do próximo registrador atravez da xor e chama as Label, BitSomaZero e BitSomaUm
+#Se o registrador 11 tiver o bit mais significativo com valor 1 ou zero, este valor vai ser adcionado quando a Label 
+#ContaCRC2 for chamada.	
+AtRegistrador:
+	xor r14,r11,r15 #r15 = 0b10000000000000000000000000000000
+	bgt r11,r14,BitSomaZero	#r11<r14
+	bgt r14,r11,BitSomaUm	#r14<r11
+
+BitSomaZero:
+	mov r11,r0
+	sll r2,r2,r7
+	call ContaCRC2
+
+BitSomaUm:
+	mov r11,r7 #valor a ser adcionado no registrador principal (r1)
+	sll r2,r2,r7
+	call ContaCRC2
+
+AtRegistrador2:
+	xor r14,r11,r15 #r15 = contante
+	bgt r11,r14,BitSomaZero2
+	bgt r14,r11,BitSomaUm2
+
+BitSomaZero2:
+	mov r11,r0
+	sll r2,r2,r7
+	call Deslocar2
+
+BitSomaUm2:
+	mov r11,r7
+	sll r2,r2,r7
+	call Deslocar2
+
+AtRegistrador3:
+	xor r14,r11,r15 #r15 = contante
+	bgt r11,r14,BitSomaZero3
+	bgt r14,r11,BitSomaUm3
+
+BitSomaZero3:
+	mov r11,r0
+	sll r1,r1,r7
+	add r1,r1,r11
+	sll r2,r2,r7
+	call ContaCRC
+
+BitSomaUm3:
+	mov r11,r7
+	sll r1,r1,r7
+	add r1,r1,r11
+	sll r2,r2,r7
+	call ContaCRC
+	
+Exit:
+	addi r13,r13,1
+	beq r13,r16,Final
+	addi r8,r8,4
+	mov r2,r8
+	ldw r2,0(r2)
+	mov r11,r2
+	movi r9,0
+	beq r13,r16,Final
+	call AtRegistrador2
+Final:
+	
+
